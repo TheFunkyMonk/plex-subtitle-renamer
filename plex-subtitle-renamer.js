@@ -20,8 +20,10 @@ const readAllFolder = () => {
 				if (file.toLowerCase().includes('english')) {
 					const ext = path.extname(file);
 					const oldPath = dirMain + '/' + dir + '/' + file;
-					const newPath = dirMain + '/' + dir + '/' + dir + '.en.0' + count + ext;
-					fs.rename(oldPath, newPath, err => console.log(err));
+					const newPath = dirMain.replace('Subs', '') + dir + '.en.0' + count + ext;
+					fs.copyFile(oldPath, newPath, err => {
+						if (err) console.log(err);
+					});
 					count++;
 				}
 			}
