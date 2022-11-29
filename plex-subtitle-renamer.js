@@ -1,5 +1,3 @@
-// node rename.js --/Path/to/dir
-
 const fs = require('fs');
 const path = require('path');
 
