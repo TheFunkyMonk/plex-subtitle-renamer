@@ -4,12 +4,12 @@ Takes a folder of subtitles like:
 ```
 /Season 01
 	/Subs
-		- ShowName.S01E01
+		/ShowName.S01E01
 			- English_02.srt
 			- English_03.srt
 			- Arabic_04.srt
 			- Czech_05.srt
-		- ShowName.S01E02
+		/ShowName.S01E02
 			- English_04.srt
 			- English_05.srt
 			- English_06.srt

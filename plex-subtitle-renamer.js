@@ -3,7 +3,7 @@ const path = require('path');
 
 const dirMain = process.argv[2];
 
-const readAllFolder = () => {
+const renameSubs = () => {
 	const readDirMain = fs.readdirSync(dirMain);
 
 	readDirMain.forEach(dir => {
@@ -28,4 +28,4 @@ const readAllFolder = () => {
 		}
 	});
 };
-readAllFolder(dirMain);
+renameSubs(dirMain);
